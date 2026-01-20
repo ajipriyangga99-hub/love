@@ -1,1 +1,64 @@
-# love
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Love Animation</title>
+<style>
+    body {
+        background: black;
+        color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: monospace;
+    }
+
+    #container {
+        text-align: center;
+    }
+
+    #heart {
+        white-space: pre;
+        font-size: 14px;
+        line-height: 14px;
+        animation: beat 1s infinite;
+    }
+
+    @keyframes beat {
+        0% { transform: scale(1); }
+        25% { transform: scale(1.1); }
+        50% { transform: scale(1); }
+        75% { transform: scale(1.15); }
+        100% { transform: scale(1); }
+    }
+
+    #text {
+        margin-top: 20px;
+        font-size: 24px;
+        color: pink;
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+
+<div id="container">
+<pre id="heart">
+      **     **      
+   ***************
+ *******************
+ *******************
+  *****************
+    *************
+      *********
+        *****
+          *
+</pre>
+
+<div id="text">I LOVE PUTRI SEPTIANA SARI</div>
+</div>
+
+</body>
+</html>
